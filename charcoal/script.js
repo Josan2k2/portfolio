@@ -37,5 +37,5 @@ document.getElementById("copy-email").addEventListener("click", async () => {
 const languageSelect = document.getElementById("language-select");
 languageSelect.addEventListener("change", () => {
     const pages = { en: "index.html", pt: "pt.html", es: "es.html" };
-    location.href = pages[languageSelect.value] + location.hash;
+    location.href = "/charcoal/" + pages[languageSelect.value] + location.hash;
 });
