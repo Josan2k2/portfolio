@@ -5,3 +5,6 @@ Open navy/index.html or charcoal/index.html. Each design includes English, Portu
 Upload this entire folder to Vercel or another static host. No build or dependencies needed. CV download is English in every language.
 
 Midnight navy: deep navy with champagne accents and editorial typography. Charcoal blue: graphite with ice-blue accents and modern sans-serif headings.
+
+Grabados a Medida project preview: /grabados/ (self-contained original Spanish site).
+Portfolio project previews link to /grabados/ in both palettes and all three languages.

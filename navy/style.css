@@ -989,3 +989,60 @@ body[data-theme="charcoal"] .number {
         color: #ffffff;
     }
 }
+
+/* Featured project: approved book and website showcase artwork */
+.project-art.project-art-showcase {
+    padding: 0;
+    background: #182f50;
+    display: block;
+    border: 1px solid var(--line);
+}
+.project-art.project-art-showcase::before,
+.project-art.project-art-showcase::after { content: none; }
+.project-art-showcase img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 520px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 250ms ease;
+}
+.project-art-showcase:hover img { transform: scale(1.025); }
+@media (prefers-reduced-motion: reduce) {
+    .project-art-showcase img { transition: none; }
+    .project-art-showcase:hover img { transform: none; }
+}
+@media (max-width: 700px) {
+    .project-art-showcase img { min-height: 0; aspect-ratio: 3 / 2; }
+}
+
+/* Grabados A Medida — full-bleed image, matching the book showcase */
+.project-art.project-art-grabados {
+    padding: 0;
+    background: #fff;
+    border: 1px solid var(--line);
+    display: block;
+    min-height: 520px;
+}
+.project-art-grabados::before, .project-art-grabados::after { content: none; }
+.project-art-grabados img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 520px;
+    max-width: none;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 250ms ease;
+}
+.project-art-grabados:hover img { transform: scale(1.025); }
+.project-launch-status { font-size: 13px; color: var(--muted); margin-top: 22px; }
+@media (prefers-reduced-motion: reduce) {
+    .project-art-grabados img { transition: none; }
+    .project-art-grabados:hover img { transform: none; }
+}
+@media (max-width:700px) {
+    .project-art.project-art-grabados { min-height: 0; }
+    .project-art-grabados img { min-height: 0; aspect-ratio: 3 / 2; }
+}

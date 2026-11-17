@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="es-CL">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#12326E" name="theme-color"/>
+<meta content="Grabados A Medida: corte y grabado láser, impresión 3D y regalos personalizados en Chile. Explora y cotiza tu proyecto." name="description"/>
+<link href="manifest.webmanifest" rel="manifest"/>
+<link href="assets/logo.png" rel="icon"/>
+<title>Grabados A Medida | Ideas que toman forma</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="demo-banner" role="status">SITIO DE DEMOSTRACIÓN · Enlaces externos, contactos y pedidos deshabilitados. No introduzcas datos personales.</div>
+<div class="top">
+            Hecho a tu medida en Santiago · Envíos a todo Chile
+            <span>Atención personalizada desde 2018</span>
+</div>
+<header>
+<a aria-label="Grabados A Medida inicio" href="#inicio"><img alt="Grabados A Medida" class="logo" src="assets/logo.png"/></a>
+<nav>
+<a href="#productos">Productos</a><a href="#servicios">Servicios</a><a href="#nosotros">La empresa</a><a href="#cotizar">Cotizar</a>
+</nav>
+<button class="cartbtn" id="openCart">Mi pedido <b id="count">0</b></button>
+</header>
+<main>
+<section class="hero" id="inicio">
+<div>
+<p class="eyebrow">PRECISIÓN TECNOLÓGICA. SELLO PERSONAL.</p>
+<h1>Tus ideas.<br/>Una forma<br/><em>única.</em></h1>
+<p class="intro">
+                        Grabado láser, corte e impresión 3D para regalos con significado y proyectos
+                        que representan a tu empresa.
+                    </p>
+<div class="actions">
+<a class="button" href="#productos">Explorar productos ↗</a><a class="textlink" href="#cotizar">Cotizar mi idea →</a>
+</div>
+<p class="small">Diseñamos contigo. Creamos a tu medida.</p>
+</div>
+<div class="heroimage">
+<img alt="Detalle del trabajo de corte láser" fetchpriority="high" src="assets/hero.jpg"/>
+<div class="imagebadge">
+<span>DEL DISEÑO A LA PIEZA FINAL</span><strong>Cada detalle cuenta.</strong>
+</div>
+<div class="corner">LÁSER / 3D / DISEÑO</div>
+</div>
+</section>
+<div class="strip">
+<span>01   Personalización</span><span>02   Madera y acrílico</span><span>03   Proyectos corporativos</span><span>04   Envíos a todo Chile</span>
+</div>
+<section id="productos">
+<div class="sectionhead">
+<div>
+<p class="eyebrow">ELIGE EL PUNTO DE PARTIDA</p>
+<h2>Piezas para regalar.<br/>Ideas para destacar.</h2>
+</div>
+<p>
+                        Desde un detalle personal hasta un pedido para tu equipo. Explora,
+                        personaliza y arma tu pedido.
+                    </p>
+</div>
+<div aria-label="Filtrar productos" class="filters">
+<button class="active" data-filter="Todos">Todos</button><button data-filter="Regalos">Regalos personalizados</button><button data-filter="Empresas">Para empresas</button><button data-filter="3D">Impresión 3D</button>
+</div>
+<p class="notice">
+                    Catálogo de muestra: precios y tiempos referenciales, pendientes de validación
+                    comercial. Valores en CLP con IVA incluido.
+                </p>
+<div class="grid" id="catalog"></div>
+</section>
+<section class="services" id="servicios">
+<p class="eyebrow">TECNOLOGÍA AL SERVICIO DE TU IDEA</p>
+<h2>Más que un producto.<br/>Una solución a medida.</h2>
+<div class="servicegrid">
+<article>
+<span>01 / LÁSER</span>
+<h3>Corte y grabado</h3>
+<p>
+                            Detalles personalizados en madera y acrílico: nombres, logotipos y
+                            diseños que hacen cada pieza propia.
+                        </p>
+</article>
+<article>
+<span>02 / IMPRESIÓN 3D</span>
+<h3>Del modelo al objeto</h3>
+<p>
+                            Llaveros, maquetas y piezas para proyectos especiales. Revisamos la
+                            viabilidad de tu diseño antes de producir.
+                        </p>
+</article>
+<article>
+<span>03 / EMPRESAS</span>
+<h3>Tu marca, presente</h3>
+<p>
+                            Galvanos, timbres, regalos y pedidos por volumen. Coordinamos diseño,
+                            cantidades y entrega contigo.
+                        </p>
+</article>
+</div>
+</section>
+<section class="quote" id="cotizar">
+<div>
+<p class="eyebrow">PLANIFICA TU PROYECTO</p>
+<h2>Una idea clara.<br/>Un presupuesto<br/><em>sin sorpresas.</em></h2>
+<p>
+                        Obtén una referencia inicial de costo y plazo. Confirmaremos materiales,
+                        diseño y disponibilidad antes de aceptar el pedido.
+                    </p>
+<ol class="steps">
+<li>Selecciona y personaliza tu pieza.</li>
+<li>Revisa presupuesto e IVA.</li>
+<li>Coordina diseño, pago y entrega.</li>
+</ol>
+<p class="small">
+                        ¿Maquetas, insumos al por mayor u otro diseño especial?
+                        <span class="demo-disabled-link" title="Enlace deshabilitado en esta demostración">Conversemos →
+</span></p>
+</div>
+<div class="quotecard">
+<h3>Cotizador de productos</h3>
+<form id="quoteForm">
+<label>Producto<select id="product"></select></label>
+<div class="formrow">
+<label>Cantidad<input id="qty" max="5000" min="1" required="" type="number" value="1"/></label><label>Personalización<select id="custom">
+<option value="0">Diseño estándar</option>
+<option value="2500">Nombre o texto</option>
+<option value="6000">Logotipo / diseño especial</option>
+</select></label>
+</div>
+<label>Texto o indicaciones<textarea id="details" maxlength="500" placeholder="Nombre, ocasión, colores o detalles de tu idea"></textarea></label><label>Entrega<select id="delivery">
+<option value="pickup">Retiro coordinado en Santiago</option>
+<option value="santiago">
+                                    Despacho en Santiago · por confirmar
+                                </option>
+<option value="regions">Regiones · envío por pagar</option>
+</select></label>
+<div aria-live="polite" class="summary" id="estimate"></div>
+<button class="button" type="submit">Agregar a mi pedido +</button>
+<p class="small">
+                            Estimación, no oferta vinculante. Plazos desde la aprobación del diseño
+                            y confirmación del pago; excluyen festivos. El transporte se confirma
+                            por separado.
+                        </p>
+</form>
+</div>
+</section>
+<section class="about" id="nosotros">
+<div class="aboutmark">A MEDIDA<br/><span>DESDE 2018</span></div>
+<div>
+<p class="eyebrow">CONOCE GRABADOS A MEDIDA</p>
+<h2>Precisión en las piezas.<br/>Cercanía en el proceso.</h2>
+<p>
+                        Somos una empresa de Santiago que transforma ideas en piezas personalizadas
+                        mediante corte láser e impresión 3D. Nuestra atención virtual nos permite
+                        acompañarte desde la primera consulta hasta la entrega, en Santiago y a lo
+                        largo de Chile.
+                    </p>
+<p>
+                        Revisamos contigo el diseño, los materiales y la cantidad. Así, cada
+                        proyecto comienza con expectativas claras y una solución pensada para ti.
+                    </p>
+<span class="demo-disabled-link" title="Enlace deshabilitado en esta demostración">Hablemos de tu proyecto ↗</span>
+</div>
+</section>
+<section class="faq">
+<p class="eyebrow">ANTES DE HACER TU PEDIDO</p>
+<h2>Lo que necesitas saber.</h2>
+<details>
+<summary>¿Cómo se confirma el presupuesto?</summary>
+<p>
+                        Los precios de esta versión son referenciales. El equipo revisa diseño,
+                        materiales, cantidades y carga de trabajo para confirmar el valor y el plazo
+                        definitivo por WhatsApp.
+                    </p>
+</details>
+<details>
+<summary>¿Cómo funciona el pago?</summary>
+<p>
+                        Los pedidos personalizados requieren pago total antes de producir. Los
+                        productos genéricos pueden coordinarse con un 50% inicial. Todo pedido debe
+                        estar completamente pagado antes del envío. Esta versión permite solicitar
+                        pedidos por WhatsApp y no realiza cobros en línea.
+                    </p>
+</details>
+<details>
+<summary>¿Cuánto demora la entrega?</summary>
+<p>
+                        El cotizador muestra una estimación de producción y transporte en días
+                        hábiles. El plazo real depende del diseño aprobado, disponibilidad de
+                        materiales y fila de trabajo. Los envíos a regiones se coordinan por pagar
+                        mediante Starken o Chilexpress, según viabilidad.
+                    </p>
+</details>
+<details>
+<summary>¿Los precios incluyen IVA?</summary>
+<p>
+                        Sí. El cotizador y el pedido separan monto neto, IVA del 19% y total. El
+                        costo de despacho se confirma aparte. La cotización descargada no es una
+                        boleta ni una factura tributaria.
+                    </p>
+</details>
+<details>
+<summary>¿Puedo usarlo como una app?</summary>
+<p>
+                        Sí. En un navegador compatible puedes añadir esta tienda a la pantalla de
+                        inicio. El pedido se conserva en este dispositivo. Para enviar una solicitud
+                        necesitas conexión a internet.
+                    </p>
+<button hidden="" id="install">Instalar aplicación</button>
+</details>
+</section>
+<section class="contact">
+<h2>Tu próximo proyecto<br/>empieza con una idea.</h2>
+<span class="demo-disabled-link" title="Enlace deshabilitado en esta demostración">Cuéntanos por WhatsApp ↗</span>
+</section>
+</main>
+<footer>
+<img alt="Grabados A Medida" class="logo" src="assets/logo.png"/>
+<p>
+                Santiago, Chile
+                <br/>
+<span class="demo-disabled-link" title="Enlace deshabilitado en esta demostración">
+                    +56 9 6413 8882
+                
+</span></p>
+<p>
+<span class="demo-disabled-link" title="Enlace deshabilitado en esta demostración">
+                        Instagram ↗
+                    </span>
+<br/>
+                    © <span id="year"></span> Grabados A Medida
+                </p>
+<p class="developer-credit">
+                    Diseño y desarrollo web por
+                    <span class="demo-disabled-link" title="Enlace deshabilitado en esta demostración">
+                        José Andrés Silva Hirane
+                    </span>
+</p>
+</footer>
+<dialog id="cart">
+<div class="dialoghead">
+<h2>Mi pedido</h2>
+<button aria-label="Cerrar pedido" id="closeCart">✕</button>
+</div>
+<p class="notice">
+                Solicitud referencial. El equipo confirmará precio, diseño y plazo antes del pago.
+            </p>
+<div id="cartItems"></div>
+<div class="summary" id="cartTotal"></div>
+<form id="orderForm">
+<label>Tu nombre<input autocomplete="name" id="name" maxlength="100" required=""/></label><label>Datos de entrega o consulta<textarea id="orderNotes" maxlength="500" placeholder="Comuna, región y cualquier detalle relevante"></textarea></label><label>Documento solicitado<select id="doc">
+<option>Boleta</option>
+<option>Factura (datos tributarios a coordinar)</option>
+</select></label><button class="button" type="submit">Envío deshabilitado · Demo</button>
+</form>
+<button class="download" id="download">Descargar cotización</button>
+<p class="small">
+                No se cobra ni se confirma una compra desde esta página. Este sitio es una demostración: no se envían pedidos ni datos a WhatsApp.
+            </p>
+</dialog>
+<div id="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>

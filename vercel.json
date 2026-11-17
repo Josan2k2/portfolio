@@ -1,6 +1,6 @@
 {
-    "cleanUrls": true,
-    "redirects": [
+  "cleanUrls": false,
+  "redirects": [
     {
       "source": "/book",
       "destination": "https://adreamcalledgreece.com/book",
@@ -12,5 +12,4 @@
       "permanent": true
     }
   ]
-    
 }
