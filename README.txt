@@ -8,3 +8,5 @@ Midnight navy: deep navy with champagne accents and editorial typography. Charco
 
 Grabados a Medida project preview: /grabados/ (self-contained original Spanish site).
 Portfolio project previews link to /grabados/ in both palettes and all three languages.
+
+Northstar Analytics is at dashboard/index.html. Portfolio preview links explicitly target index.html for local browsing.
